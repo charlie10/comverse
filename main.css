@@ -17,6 +17,17 @@ body {
 	border-radius: 0.6em;
 	width: 10em;
 }
+.search div{
+	background: transparent;
+	border: none;
+	background-image: url("img/searchBtn.png");
+	float: right;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 1.5em;
+	width: 1.5em;
+	float: right;
+}
 .logo-nav-search a{
 	text-decoration: none;
 	color: rgb(84,84,84);
@@ -251,14 +262,83 @@ nav ul li {
 	background-color: #ECECEC;
 	text-align: center;
 }
-.success-par{
-	margin: 0.5em;
+.succ-1,
+.succ-2{
+	width: 35%;
+	display: inline-block;
+}
+.succ-2{
+	
+}
+.succ-3{
+	width: 20%;
+	display: inline-block;
+}
+.success-icons{
+	width: 100%;
+
+}
+.success-icon2,
+.success-icon3
+{
+	display: inline-block;
+}
+.succ-1 .success-icon1,
+.succ-2 .success-icon1,
+.succ-1 .success-icon2,
+.succ-2 .success-icon2,
+.success-icon3{
+	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
+	height: 5em;
+	width: 30%;
+	display: inline-block;
+	background-position: center center;
+}
+.succ-3 .success-icon1,
+.succ-3 .success-icon2{
+	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
+	height: 5em;
+	width: 47%;
+	display: inline-block;
+	background-position: center center;
+}
+.succ-1 .success-par{
+	margin-bottom: 0.5em;
 	padding: 0.5em;
 	display: inline-block;
 	background-color: white;
-	color: red;
-	width: 12em;
+	width: 95%;
 	height: 8em;
+}
+.succ-2 .success-par{
+	margin-top: 0.5em;
+	padding: 0.5em;
+	display: inline-block;
+	background-color: white;
+	width: 95%;
+	height: 8em;
+}
+.succ-3 .success-par{
+
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	display: inline-block;
+	background-color: white;
+	width: 91%;
+	height: 8em;
+}
+.succ-blue-button{
+	background: url(img/btnArrow.png) right 1em center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
+	height: 2.8em;
+	width: 14em;
+	padding: 0.8em;
+	padding-left: 1em;
+	border: none;
+	text-align: left;
+	border-radius: 0.6em;
+	color: white;
+	margin: 1em;
+
 }
 .about-comverse2{
 	background-color: rgba(105,194,45,0.8);
@@ -386,7 +466,11 @@ header{
 .key-solutions, .products-and-services,.company,.blog
 {
 	float: left;
-	width: 20%;
+	width: 22%;
+	
+}
+.key-solutions ul{
+	padding-left: 0;
 }
 .copyright{
 	clear: both;
@@ -403,7 +487,9 @@ header{
 	text-align: left;
 }
 .blog-container,
-.news-and-events{
+.news-and-events,
+.success-icons,
+.succ{
 	display: flex;
 	justify-content: space-between;
 }
@@ -485,7 +571,7 @@ header{
 .copyright{
 	position: relative;
 	/*padding: 1em;*/
-	padding-left: 2em;
+	/*padding-left: 2em;*/
 }
 .copyright div{
 	margin: 0;
