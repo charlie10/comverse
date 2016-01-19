@@ -36,6 +36,9 @@ body {
 	border: none;
 	color: rgb(84,84,84);
 }
+/*.test-right{
+	float: right;
+}*/
 .al-right{
 	text-align: right;
 	padding-right: 1em;
@@ -137,6 +140,7 @@ nav ul li {
 .read-more1 div{
 	background-image: url("img/link-icon-image.png");
 }
+
 .read-more2 div{
 	background-image: url("img/link-icon-image.png");
 }
@@ -155,34 +159,78 @@ nav ul li {
 	width: 1.5em;
 	padding-right: 0.1em;
 }
+.all-news-but div{
+	background-image: url("img/eventListIconNews.png");
+}
+.all-news-but div:hover{
+	background-image: url("img/eventListIconNews_hover.png");
+}
+
+.all-events-but div
+{
+	background-image: url("img/eventListIconEvents.png");
+}
+.all-events-but div:hover{
+	background-image: url("img/eventListIconEvents_hover.png");
+}
+.all-press-but div{
+	background-image: url("img/eventListIconPress.png");
+}
+.all-press-but div:hover{
+	background-image: url("img/eventListIconPress_hover.png");
+}
+
+.all-news-but,
+.all-events-but,
+.all-press-but{
+	padding-left: 0;
+}
+.all-events-but div,
+.all-press-but div,
+.all-news-but div
+{
+
+	background-size: auto;
+	height: 2em;
+	width: 2em;
+}
+
+.whats-happening .but-txt{
+	width: 8em;
+	text-align: left;
+	margin-left: 1.5em;
+}
 .about-comverse p{
 	margin: 0.3em;
 }
 .about-comverse1{
 	background-color: rgba(255,60,159,0.8);
-	/*color: rgba(255,255,255,0.9);
-	margin: auto;
-	text-align: center;
-	    float: left;
-	 display: list-item;
-    text-align: -webkit-match-parent
-        width: 27%;
-    height: 7em;
-    padding: 20px 15px 20px 15px;
-    margin-right: 34px;
-    border-radius: 6px;
-    list-style-type: none;
-    box-shadow: 0 1px 3px 0 grey;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 1.2em;
-    color: white;*/
-
+}
+.about-comverse1:hover{
+	cursor: pointer;
+	background-color: rgb(255,60,159);
+}
+.about-comverse2{
+	background-color: rgba(105,194,45,0.8);
+	
+}
+.about-comverse2:hover{
+	cursor: pointer;
+	background-color: rgb(105,194,45);
+}
+.about-comverse3{
+	background-color: rgba(240,115,5,0.8);
+	
+}
+.about-comverse3:hover{
+	cursor: pointer;
+	background-color: rgb(240,115,5);
 }
 .whats-happening{
-		background-image: url("img/news-and-events-bg.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		text-align: center;
+	background: url("img/news-and-events-bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
 
 }
 .u-hidden{
@@ -218,6 +266,9 @@ nav ul li {
 .news-and-events-bg{
 	background-color: rgba(255,255,255,0.4);
 }
+.news-and-events-bg:hover{
+	background-color: rgba(255,255,255,0.7);
+}
 .whats-happening h4,
 .whats-happening h3{
 	color: white;
@@ -240,13 +291,7 @@ nav ul li {
 	color: white;
 	padding-top: 1em;
 }
-.all-news-button div/*,
-.all-events-button div*/{
-	display: inline-block;
-	background-image: url("img/link-icon-image.png");
-	width: 1.5em;
-	padding-right: 0.1em;
-}
+
 
 .blue-button{
 	background: url(img/btnArrow.png) right 1.5em center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
@@ -262,12 +307,71 @@ nav ul li {
 .success-stories{
 	background-color: #ECECEC;
 	text-align: center;
+	color:#6D6D6D;
 }
-
+.success-stories a{
+	color:#47ACDD;
+	text-decoration: none;
+}
+.success-stories h2{
+	font-weight: normal;
+	font-size: 2em;
+}
 .succ-1,
 .succ-2{
-	width: 39%;
+	width: 39.3%;
 	display: inline-block;
+}
+
+
+.succ-para-1{
+	display: inline-block;
+	width: 60%;
+	margin: 0.5em;
+	text-align: left;
+}
+.succ-para-1:before{
+	content: url(img/quote-grey.png);
+	width: 3em;
+	height: 3em;
+}
+.succ-para-1:after{
+	content: url(img/quote-grey.png);
+	width: 3em;
+	height: 3em;
+}
+/*.apostrophy{
+	font-size: 0;
+	width: 5em;
+	height: 5em;
+	background-image: url(img/quote-grey.png);
+}*/
+.sergey-pic{
+	width: 5em;
+	height: 5em;
+	background-image: url(img/CB-JP-face.png);
+	background-position: center center;
+	background-size: cover;
+	display: inline-block;
+	float: left;
+	margin-left: 1em;
+}
+.serg-par{
+	width: 13em;
+	margin-right: 1em;
+}
+.sergey-link{
+	width: 50%;
+}
+.cabale-wireless{
+	background-image: url(img/cable_wireless_w100px_X_h42px2.jpg);
+	height: 4em;
+	width: 5em;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+	display: inline-block;
+	/*float: right;*/
+	margin-right: 1em;
 }
 .succ-2{
 	
@@ -285,32 +389,86 @@ nav ul li {
 {
 	display: inline-block;
 }
+
 .succ-1 .success-icon1,
 .succ-2 .success-icon1,
 .succ-1 .success-icon2,
 .succ-2 .success-icon2,
 .success-icon3{
-	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
 	height: 5em;
 	width: 32%;
 	display: inline-block;
 	background-position: center center;
+	
+
 }
+.succ-1 .success-icon1{
+	background: url(img/mts_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+.succ-1 .success-icon2{
+	background: url(img/Tata_Sky_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+.succ-1 .success-icon3{
+	background: url(img/upc_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+
+.succ-2 .success-icon1{
+	background: url(img/MAX_telecom_w108px_X_h95.jpg);
+	background-position: center center;
+}
+
+.succ-2 .success-icon2{
+	background: url(img/Kyivstarw_w108px_X_h95.jpg);
+	background-position: center center;
+}
+.succ-2 .success-icon3{
+	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+
 .succ-3 .success-icon1,
 .succ-3 .success-icon2{
 	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
 	height: 5em;
-	width: 48%;
+	width: 48.3%;
 	display: inline-block;
 	background-position: center center;
 }
+.succ-3 .success-icon1{
+	background: url(img/3mob_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+.succ-3 .success-icon2{
+	background: url(img/play_w108px_X_h95px.jpg);
+	background-position: center center;
+}
+
+
+
+
+
 .succ-1 .success-par{
 	margin-bottom: 0.5em;
 	padding: 0.5em;
 	display: inline-block;
 	background-color: white;
 	width: 95%;
-	height: 8em;
+	height: 10em;
+}
+.succ-1-up{
+	border-bottom-style: solid;
+	border-color: #DDDDDD;
+	border-bottom-width: 0.1em;
+	margin-top: 0.1em;
+	margin-bottom: 0.75em;
+}
+.succ-1-down{
+	margin-top: 0.75em;
+	text-align: left;
+	margin-left: 1em;
 }
 .succ-2 .success-par{
 	margin-top: 0.5em;
@@ -318,7 +476,7 @@ nav ul li {
 	display: inline-block;
 	background-color: white;
 	width: 95%;
-	height: 8em;
+	height: 10em;
 }
 .succ-3 .success-par{
 
@@ -327,7 +485,7 @@ nav ul li {
 	display: inline-block;
 	background-color: white;
 	width: 91%;
-	height: 8em;
+	height: 10em;
 }
 .succ-blue-button{
 	background: url(img/btnArrow.png) right 1em center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
@@ -342,21 +500,7 @@ nav ul li {
 	margin: 1em;
 
 }
-.about-comverse2{
-	background-color: rgba(105,194,45,0.8);
-	/*margin: auto;
-	width: 15%;
-	display: inline;*/
-	
-}
-.about-comverse3{
-	background-color: rgba(240,115,5,0.8);
-	/*margin: auto;
-	float: center;
-	width:15%;
-	display: inline;*/
-	
-}
+
 .Solutions{
 	background: linear-gradient(to left,#308fbf,#4daaca,#308fbf);
 	color: white;
@@ -383,7 +527,7 @@ nav ul li {
 }
 .footer{
 	background: linear-gradient(to left,#202020,#2B2B2B,#202020);
-	color: white;
+	color: #EEEEEE;
 	width: 100%;
 	padding: 0;
 }
@@ -445,6 +589,27 @@ nav li + li,
 	display: inline;
 	float: left;
 }
+.sol-data-mone:hover img{
+	content: url("img/solution_icon_biz-analitics_hover.png");
+}
+.sol-mtm:hover img{
+	content: url("img/solution_icon_diti-cx_hover.png");
+}
+.sol-ott:hover img{
+	content: url("img/solution_icon_smart-money_hover.png");
+}
+.sol-cloud-com:hover img{
+	content: url("img/solution_icon_optimize-efficnt_hover.png");
+	
+}
+.sol-managed-ser:hover img{
+	content: url("img/solution_icon_personal_hover.png");
+	
+}
+.sol-social-med:hover img{
+	content: url("img/solution_icon_biz-transform_hover.png");
+	
+}
 header{
 	padding: 0;
 }
@@ -465,6 +630,13 @@ header{
 .footer ul{
 	list-style-type: none;
 }
+.footer li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.footer li{
+	margin-top: 0.38em;
+}
 .key-solutions, .products-and-services,.company,.blog
 {
 	float: left;
@@ -484,6 +656,7 @@ header{
 	text-align: center;
 	float: right;
 	min-height: 22em;
+	padding: 0.5em;
 }
 .al-left{
 	text-align: left;
@@ -491,6 +664,7 @@ header{
 .blog-container,
 .news-and-events,
 .success-icons,
+.succ-1-down,
 .succ{
 	display: flex;
 	justify-content: space-between;
@@ -504,14 +678,16 @@ header{
 }
 .blog-container .date  .day
 {
-	font-size: 4em;
+	font-size: 3.5em;
+	color: #FFFFFF;
 	font-weight: bold;
 	margin-bottom: 0;
 	margin-top: 0em;
 }
 .blog-container .date  .month
 {
-	font-size: 2.6em;
+	font-size: 2em;
+	color: #FEFEFE;
 	margin-top: 0;
 	margin-bottom: 0.2em;
 	margin-left: 0.2em;
@@ -532,6 +708,7 @@ header{
 	height: 1.7em;
 	margin-left: -1em;
 }
+
 #sign-up{
 	height: 1.2em;
 	border-radius: 0.25em;
@@ -541,6 +718,21 @@ header{
 .icon-button1{
 	background-image: url("img/socialMenuIcon-youtube.png");
 	margin-left: 1em;
+}
+
+
+
+.sol:hover,
+.all-events-but div:hover,
+.all-news-but div:hover,
+.all-press-but div:hover,
+.news-and-events-bg:hover,
+.blue-button2:hover,
+.icon-button1:hover,
+.icon-button2:hover,
+.icon-button3:hover{
+	cursor: pointer;
+
 }
 .icon-button2{
 	background-image: url("img/socialMenuIcon-twitter.png");
@@ -577,7 +769,7 @@ header{
 }
 .copyright div{
 	margin: 0;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 	padding: 0;
 }
 .copyright ul{
@@ -587,4 +779,13 @@ header{
 .copyright-bottom{
 	position: absolute;
 	bottom: 0px;
+}
+
+/*================================================*/
+/*mobile version*/
+
+@media screen and (max-width: 600px) {
+    .footer{
+    	color: red;
+    }
 }
