@@ -2,7 +2,9 @@ html{
 	font-family: 'Open Sans',sans-serif;
 
 }
-
+*:focus{
+	outline: inherit;
+}
 body {
 	margin: 0;
 }
@@ -13,20 +15,38 @@ body {
 	margin-bottom: 0.7em;
 	
 }
+
 #search{
 	border-radius: 0.6em;
-	width: 10em;
+	border:none;
+	width: 8em;
+}
+
+
+.search-tab{
+	padding: 0em;
+	padding-right: 0.5em;
+	border-radius: 0.6em;
+	border: 2px inset;
+	/*border-color: rgb(84,84,84);*/
+	width: inherit;
+	height: inherit;
+	border-width: 0.1em;
+	margin-left: 5em;
+}
+.search-button:focus{
+	/*float: left;*/
+
 }
 .search div{
 	background: transparent;
+	display: inline-block;
 	border: none;
-	background-image: url("img/searchBtn.png");
-	float: right;
+	background-image: url("img/search_line_devider.png");
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 1.5em;
+	height: 1.4em;
 	width: 1.5em;
-	float: right;
 }
 .logo-nav-search a{
 	text-decoration: none;
@@ -86,18 +106,39 @@ nav ul li {
 .learn-more-button{
 	/*padding-left: 1em;*/
 }
-.radio-but{
+
+.radio-button{
 	margin-top: 1em;
 	/*margin-left: 1em;*/
 }
-
-/*=======================*/
-
-
-/*=======================*/
-.radio-but input{
+.radio-button input{
 	margin: 0;
+	display: none;
 }
+.radio-button span{
+	display: inline-block;
+	height: 0.8em;
+	width: 0.8em;
+	border-radius: 0.3em;
+	background-color: #E8E5E1;
+
+}
+.radio-button input:checked + label span{
+	background-color: 	#1C91C8;
+
+}
+
+.radio-button span:hover{
+	background-color: #1C91C8;
+	cursor: pointer;
+
+}
+
+
+/*=======================*/
+
+
+/*=======================*/
 
 .about-comverse1,
 .about-comverse2,
@@ -107,18 +148,18 @@ nav ul li {
 	margin-left: 0;
 	width: calc(33.33% - 2em);
 	box-sizing:border-box;
-    height: 8em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    /*margin-right: 10px;*/
-    border-radius: 6px;
-    list-style-type: none;
-    box-shadow: 0 1px 3px 0 grey;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 1.2em;
-    color: white;
-    display: list-item;
-    text-align: -webkit-match-parent;
-    float: left;
+	height: 8em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	/*margin-right: 10px;*/
+	border-radius: 6px;
+	list-style-type: none;
+	box-shadow: 0 1px 3px 0 grey;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 1.2em;
+	color: white;
+	display: list-item;
+	text-align: -webkit-match-parent;
+	float: left;
 }
 .read-more1,
 .read-more2,
@@ -167,21 +208,26 @@ nav ul li {
 .all-news-but div{
 	background-image: url("img/eventListIconNews.png");
 }
-.all-news-but div:hover{
+.all-news-but:hover div{
 	background-image: url("img/eventListIconNews_hover.png");
+	
 }
-
+.all-news-but:hover,
+.all-events-but:hover,
+.all-press-but:hover{
+	color: black;
+}
 .all-events-but div
 {
 	background-image: url("img/eventListIconEvents.png");
 }
-.all-events-but div:hover{
+.all-events-but:hover div{
 	background-image: url("img/eventListIconEvents_hover.png");
 }
 .all-press-but div{
 	background-image: url("img/eventListIconPress.png");
 }
-.all-press-but div:hover{
+.all-press-but:hover div{
 	background-image: url("img/eventListIconPress_hover.png");
 }
 
@@ -251,7 +297,7 @@ nav ul li {
 }
 .news-and-events-elements .date{
 	background-color: #2e94c8;
-	/*float: left;*/
+	float: left;
 	display: inline-block;
 	text-align: center;
 	color: white;
@@ -262,7 +308,7 @@ nav ul li {
 .news-and-events-elements .date .day{
 	border-bottom-style: dotted;
 	border-bottom-width: 0.1em;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.8em;
 	height: 0.8em;
 	
 }
@@ -341,12 +387,23 @@ nav ul li {
 	margin: 0.5em;
 	text-align: left;
 }
-.succ-para-1:before{
+.succ-para-3{
+	display: inline-block;
+	margin: 0.5em;
+	text-align: left;
+}
+.succ-3 p{
+	margin-top: 0.3em;
+	margin-bottom: 0;
+}
+.succ-para-1:before,
+.succ-para-3:before{
 	content: url(img/quote-grey.png);
 	width: 3em;
 	height: 3em;
 }
-.succ-para-1:after{
+.succ-para-1:after,
+.succ-para-3:after{
 	content: url(img/quote-grey.png);
 	width: 3em;
 	height: 3em;
@@ -357,7 +414,8 @@ nav ul li {
 	height: 5em;
 	background-image: url(img/quote-grey.png);
 }*/
-.sergey-pic{
+.sergey-pic,
+.greame-pic{
 	width: 5em;
 	height: 5em;
 	background-image: url(img/CB-JP-face.png);
@@ -366,6 +424,9 @@ nav ul li {
 	display: inline-block;
 	float: left;
 	margin-left: 1em;
+}
+.greame-pic{
+	background-image: url(img/JT-GM-face.png);
 }
 .serg-par{
 	width: 13em;
@@ -388,13 +449,24 @@ nav ul li {
 .jt{
 	background-image: url(img/Jersey_Telecom_w100px_X_h42px.jpg);
 }
+.multilinks{
+	background-image: url(img/multilinks.jpg);
+	height: 2em;
+	width: 3em;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
 .succ-2{
 	
 }
 .succ-3{
 	width: 20%;
 	display: inline-block;
+	text-align: left;
 }
+
 .success-icons{
 	width: 99.5%; 
 	background-repeat: no-repeat;
@@ -523,6 +595,10 @@ nav ul li {
 	text-align: center;
 	/*height: 17em;*/
 }
+.Solutions h2{
+	font-weight: normal;
+	font-size: 2em;
+}
 .Solutions a{
 	text-decoration: none;
 	color: white;
@@ -547,6 +623,7 @@ nav ul li {
 	width: 100%;
 	padding: 0;
 }
+
 nav li + li,
 .copyright li+li,
 .al-right li+li
@@ -563,7 +640,7 @@ nav li + li,
 	display: inline;
 	width: 20%;
 }
-.inl,.search{
+.inl/*,.search*/{
 	display: inline;
 	width: 20%;
 	font-size: 1.1em;
@@ -682,6 +759,7 @@ header{
 .news-and-events,
 .success-icons,
 .succ-1-down,
+.succ-3-down,
 .succ{
 	display: flex;
 	justify-content: space-between;
@@ -747,9 +825,9 @@ header{
 .blue-button2:hover,
 .succ-blue-button:hover,
 .sol:hover,
-.all-events-but div:hover,
-.all-news-but div:hover,
-.all-press-but div:hover,
+.all-events-but:hover,
+.all-news-but:hover,
+.all-press-but:hover,
 .news-and-events-bg:hover,
 .blue-button2:hover,
 .icon-button1:hover,
@@ -811,16 +889,62 @@ header{
 	bottom: 0px;
 }
 
+.u-hide-always,
+.u-hide-reg{
+	display: none;
+}
+.u-font-0{
+	font-size: 0;
+
+}
 /*================================================*/
 /*mobile version*/
 
 @media screen and (max-width: 900px) {
-    .footer{
-    	color: red;
-    }	
-	.intro-titles{
-		background-color: rgba(64,144,193,0.96)
+	/*=============header==============*/
+
+/*	.logo-nav-search{
+		display: flex;
+		justify-content: space-between;
+
+	}*/
+	.hamburger-icon{
+		background-color: #F5F5F5;
+		width: 3em;
+		height: 3em;
+		border-radius: 0.6em;
+		margin-left: 1em;
 	}
+	.hamburger-icon div{
+		background-image: url("img/hamburger-icon.png");
+		background-color: transparent;
+		background-repeat: no-repeat;
+		position: relative;
+		top: 15%;
+		left: 15%;
+		background-size: cover;
+		width: 2em;
+		height: 2em;
+		display: inline-block;
+	}
+	.logo{
+		position: relative;
+		left: 35%;
+	}
+	.search-tab{
+		display: block;
+	}
+	#search{
+		width: 47em;
+	}
+	
+	/*================introduction===================*/
+	.intro-titles{
+		background-color: rgba(64,144,193,0.96);
+		padding: 0.5em;
+		margin-bottom: 1em;
+	}
+
 	.about-comverse1,
 	.about-comverse2,
 	.about-comverse3{
@@ -836,8 +960,46 @@ header{
 		white-space: initial;
 	}
 	.about-comverse{
-		background-color: #FFFFFF;
+		/*background-color: #FFFFFF;*/
 	}
+	#slide1 + label span:before{
+		content: '1';
+		position: relative;
+		top: 15%;
+		left:30%;
+	}
+	#slide2 + label span:before{
+		content: '2';
+		position: relative;
+		top: 15%;
+		left:30%;
+	}
+	#slide3 + label span:before{
+		content: '3';
+		position: relative;
+		top: 15%;
+		left:30%;
+	}
+	#slide4 + label span:before{
+		content: '4';
+		position: relative;
+		top: 15%;
+		left:30%;
+	}
+	#slide5 + label span:before{
+		content: '5';
+		position: relative;
+		top: 15%;
+		left:30%;
+	}
+	.radio-button span{
+		width: 1.5em;
+		height: 1.5em;
+		
+
+	}
+
+	/*=============solution=============*/
 	.Solutions{
 		margin-top: 0.5em;
 	}
@@ -860,7 +1022,65 @@ header{
 	.Solutions{
 		/*min-height: 100%;*/
 	}
-	.Solutions .blue-button{
+	/*.Solutions .blue-button{
 		visibility: hidden;
+	}*/
+	
+
+	/*==============news and events=================*/
+
+	.news-and-events{
+		display: block;
+		justify-content: none;
 	}
+	.news-and-events-elements{
+		width:90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	/*============================success stories==================*/
+	.succ{
+		display: block;
+	}
+	.succ-1,
+	.succ-2{
+		display: block;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+
+	}
+	.succ-2{
+		margin-top: 0.5em;
+	}
+	.succ-1 .success-icon1,
+	.succ-1 .success-icon2,
+	.succ-1 .success-icon3,
+	.succ-2 .success-icon1,
+	.succ-2 .success-icon2,
+	.succ-2 .success-icon3{
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.succ-2 .success-par{
+		margin-top: 0em;
+		margin-bottom: 0.5em;
+	}
+
+
+	/*================footer=====================*/
+	.footer{
+	 	display: none;
+	}	
+
+	
+	/*============utilty==================*/
+	.u-hide-resp{
+		display: none;
+	}
+	.u-hide-reg{
+		display: inline-block;
+	}
+
+
 }

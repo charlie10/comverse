@@ -9,10 +9,11 @@
 	<header>
 		 <div class="box ">
 			<div class="logo-nav-search">
+				<div class="hamburger-icon u-hide-reg"><div></div></div>
 				<a href="">
 					<img class="logo" src="img/comverse-logo.png" alt="Comverse Logo" >
 				</a>
-				<nav class="inl">
+				<nav class="inl u-hide-resp">
 					<ul class="inl">
 						<li><a href="">Your Needs</a></li>
 						<li><a href="">Our Portfolio</a></li>
@@ -21,7 +22,7 @@
 					</ul>
 				</nav>
 				<div class="inline-b test-right u-clear-fix ">
-					<div class="al-right">
+					<div class="al-right u-hide-resp">
 							<ul >
 							<li class="lang">	
 								<select>
@@ -33,12 +34,14 @@
 							<li class="login"><a href="">Customer login</a></li>	
 						</ul>
 					</div>
-					<div class="inline-b">
+					<div class="inline-b search-tab ">
 						<form class="search" action="">
-							<!--   <label class="search-txt"for="search">Search the site</label>    -->
+
+							<label class="u-hide-always"for="search">Search the site</label>
+							
+							<input class="" id="search" type="search">
 							<div></div>
-							<input id="search" type="search">
-							<!--<input class = "u-hidden" type="submit" value="Search">-->
+							<input class = "u-font-0 search-button" type="image" type="submit" src="img/searchBtn.png" value="Search">
 							
 						</form>
 					</div>
@@ -55,16 +58,28 @@
 			<div class="learn-more-button">
 				<button class="blue-button" type="button">Learn More</button>
 			</div>
-			<div class = "radio-but">
-				<form action="">
-					<input type="radio" name="unkonwn" value="" checked="checked">
-					<span></span>
-					<input type="radio" name="unkonwn" value="">
-					<span></span>
-					<input type="radio" name="unkonwn" value="">
-					<span></span>
-					<input type="radio" name="unkonwn" value="">
-					<span></span>
+			<div class = "radio-button">
+				<form>
+					<input type="radio" id="slide1" name="slides"  checked="checked" >
+					<label for="slide1">
+						<span></span>
+					</label>
+					<input type="radio" id="slide2" name="slides" >
+					<label for="slide2">
+						<span></span>
+					</label>
+					<input type="radio" id="slide3" name="slides" >
+					<label for="slide3">
+						<span></span>
+					</label>
+					<input type="radio" id="slide4" name="slides" >
+					<label for="slide4">
+						<span></span>
+					</label>
+					<input type="radio" id="slide5" name="slides" >
+					<label for="slide5">
+						<span></span>
+					</label>
 				</form>
 			</div>
 			<div class="about-comverse u-clear-fix">
@@ -137,7 +152,7 @@
 					</div>
 				</div>
 			</div>
-			<button class="blue-button" type="button">See all of our solutions</button>
+			<button class="blue-button u-hide-resp" type="button">See all of our solutions</button>
 		</div>
 	</div>
 	<div class="whats-happening">
@@ -202,7 +217,7 @@
 						<div class="succ-1-up">
 							<div class="sergey-pic"></div>
 							<q class="succ-para-1">
-								We have a very good and very warm relations with Comverse. We always achievet...
+								 We have a very good and very warm relations with Comverse. We always achievet... 
 							</q>
 						</div>
 						<div class="succ-1-down">
@@ -220,34 +235,43 @@
 					</div>
 				</div>
 				<div class="succ-2">
-					<div class="success-icons">
+					<div class="success-icons u-hide-resp">
 						<div class="success-icon1"></div>
 						<div class="success-icon2"></div>
 						<div class="success-icon3"></div>
 					</div>
 					<div class="success-par">
 						<div class="succ-1-up">
-							<div class="sergey-pic"></div>
+							<div class="greame-pic"></div>
 							<q class="succ-para-1">
-								We have a very good and very warm relations with Comverse. We always achievet...
+								 We have a very good and very warm relations with Comverse. We always achievet... 
 							</q>
 						</div>
 						<div class="succ-1-down">
 							<div class="sergey-link">
-								<a href="">Sergey Korotyoch</a>
+								<a href="">Greame Miller</a>
 								<div class="serg-par">Deputy CTO. 3 Mob Ukraine</div>
 							</div>
 							<div alt = "Jersey-telecom" class="jt"></div>
 						</div>
 					</div>
+					<div class="success-icons u-hide-reg">
+						<div class="success-icon1"></div>
+						<div class="success-icon2"></div>
+						<div class="success-icon3"></div>
+					</div>
 				</div>
-				<div class="succ-3">
+				<div class="succ-3 u-hide-resp">
 					<div class="success-par">
-						<p >"We have a very good ant..."</p>
-						<div>
-							<a href="">Sergey Korotyoch</a>
-							Deputy CTO. 3 Mob Ukraine
-							<div></div>
+						<div class="succ-1-up">
+							<q class="succ-para-3"> Comverse has demonstrated that they are partners, not just supplires </q>
+						</div>
+						<div class="succ-3-down">
+							<div>
+								<a href="">Adale Kehassan</a>
+								<P>CIO</P>
+							</div>
+							<div alt = "multilinks" class="multilinks"></div>
 						</div>
 					</div>
 					<div class="success-icons">
@@ -257,6 +281,7 @@
 				</div>
 			</div>
 			<button class="succ-blue-button" type="button">All 256 Success Stories</button>
+			<a href="#" class="cd-top">Top</a>
 			
 		</div>
 	</div>
@@ -314,7 +339,7 @@
 				<div>
 					<h4>Subscribe to comverse</h4>
 					<form class="subscribe"  action="" >
-						<input id="sign-up" type="sign up" value="charlieMbariky@gmail.com">
+						<input id="sign-up" type="sign up" placeholder="charlieMbariky@gmail.com">
 						<input class="blue-button2" type="submit" value="SIGN UP">
 					</form>
 					<div class="icons">
