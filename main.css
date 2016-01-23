@@ -1,6 +1,5 @@
 html{
 	font-family: 'Open Sans',sans-serif;
-
 }
 *:focus{
 	outline: inherit;
@@ -69,13 +68,14 @@ header,
 .Introduction,
 .Solutions,  
 .whats-happening,
-.success-stories,
 .footer {
 	padding-top: 1em;
 	padding-bottom: 1em;
 
 }
-
+.success-stories{
+	padding-top: 1em;
+}
 .Introduction{
 	background: url("img/slide-bg-complexity.jpg") ;
 	background-attachment: fixed;
@@ -290,7 +290,7 @@ nav ul li {
 	visibility: hidden;
 }
 .news-and-events-elements{
-	width: 25%;
+	width: 31.5%;
 	baceskground-color: rgba(255,255,255,0.4);
 	text-align: left;
 	/*padding: 1em;*/
@@ -376,7 +376,7 @@ nav ul li {
 }
 .succ-1,
 .succ-2{
-	width: 39.3%;
+	width: 38%;
 	display: inline-block;
 }
 
@@ -458,19 +458,15 @@ nav ul li {
 	background-repeat: no-repeat;
 	display: inline-block;
 }
-.succ-2{
-	
-}
+
 .succ-3{
-	width: 20%;
+	width: 22%;
 	display: inline-block;
 	text-align: left;
 }
 
 .success-icons{
-	width: 99.5%; 
-	background-repeat: no-repeat;
-
+	width: 100%; 
 }
 .success-icon2,
 .success-icon3
@@ -484,74 +480,190 @@ nav ul li {
 .succ-2 .success-icon2,
 .success-icon3{
 	height: 5em;
-	width: 32%;
+	width: 6.7rem;
 	display: inline-block;
 	background-position: center center;
-	
 
 }
-.succ-1 .success-icon1{
+.success-icon1 .upper,
+.success-icon1 .lower,
+.success-icon2 .upper,
+.success-icon2 .lower,
+.success-icon3 .upper,
+.success-icon3 .lower{
+	background-repeat: no-repeat;
+
+}
+/*.success-icon1{
+	overflow: hidden;
+	position: relative;
+}
+
+.success-icon1 .upper{
 	background: url(img/mts_w108px_X_h95px.jpg);
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	transform: translate(0,0);
+	transition-duration:0.6s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.success-icon1:hover .upper{
+	transform: translate(0,-100%);
+	transition-duration:0.6s;
+}
+.success-icon1 .lower{
+	background: url(img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+}*/
+
+/*======================from here paragraph====*/
+
+.success-par{
+	overflow: hidden;
+	position: relative;
+}
+.success-par:hover .upper-p{
+	transform: translate(0,-100%);
+	transition-duration:0.6s;	
+}
+.success-par .upper-p{
+	background-color: white;
+	padding: 0.5em;
+	box-sizing:border-box;
+	width: 100%;
+	height: 100%;
+	transform: translate(0,0);
+	transition-duration:0.6s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.par-margin-0{
+	margin: 0;
+}
+.success-par .lower-p{
+	background-color: #3398CC;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	padding: 0.5em;
+	box-sizing:border-box;
+	color: #EEEEEE;
+}
+
+
+
+/*======================to here paragraph====*/
+
+/* from here!!!**/
+
+.success-icon1 .upper,
+.success-icon1 .lower,
+.success-icon2 .upper,
+.success-icon2 .lower,
+.success-icon3 .upper,
+.success-icon3 .lower{
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+}
+
+.success-icon1 .upper,
+.success-icon2 .upper,
+.success-icon3 .upper{
+	transform: translate(0,0);
+	transition-duration:0.6s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.success-icon1 .lower,
+.success-icon2 .lower,
+.success-icon3 .lower{
+	background-image: url(img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
+}
+
+
+.success-icon1:hover .upper,
+.success-icon2:hover .upper,
+.success-icon3:hover .upper{
+	transform: translate(0,-100%);
+	transition-duration:0.6s;	
+}
+
+.success-icon1,
+.success-icon2,
+.success-icon3 {
+	overflow: hidden;
+	position: relative;
+}
+
+
+/*====to here ====*/
+
+.succ-1 .success-icon1 .upper{
+	background-image: url(img/mts_w108px_X_h95px.jpg);
+}
+.succ-1 .success-icon2 .upper{
+	background-image: url(img/Tata_Sky_w108px_X_h95px.jpg);
 	background-position: center center;
 }
-.succ-1 .success-icon2{
-	background: url(img/Tata_Sky_w108px_X_h95px.jpg);
-	background-position: center center;
-}
-.succ-1 .success-icon3{
-	background: url(img/upc_w108px_X_h95px.jpg);
+.succ-1 .success-icon3 .upper{
+	background-image: url(img/upc_w108px_X_h95px.jpg);
 	background-position: center center;
 }
 
-.succ-2 .success-icon1{
-	background: url(img/MAX_telecom_w108px_X_h95.jpg);
+.succ-2 .success-icon1 .upper{
+	background-image: url(img/MAX_telecom_w108px_X_h95.jpg);
 	background-position: center center;
 }
 
-.succ-2 .success-icon2{
-	background: url(img/Kyivstarw_w108px_X_h95.jpg);
+.succ-2 .success-icon2 .upper{
+	background-image: url(img/Kyivstarw_w108px_X_h95.jpg);
 	background-position: center center;
 }
-.succ-2 .success-icon3{
-	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
+.succ-2 .success-icon3 .upper{
+	background-image: url(img/VIDEOCON_w108px_X_h95px.jpg);
 	background-position: center center;
 }
 
 .succ-3 .success-icon1,
 .succ-3 .success-icon2{
-	background: url(img/VIDEOCON_w108px_X_h95px.jpg);
+	background-image: url(img/VIDEOCON_w108px_X_h95px.jpg);
 	height: 5em;
-	width: 48.3%;
+	width: 5.825rem;
 	display: inline-block;
 	background-position: center center;
 }
-.succ-3 .success-icon1{
-	background: url(img/3mob_w108px_X_h95px.jpg);
+.succ-3 .success-icon1 .upper{
+	background-image: url(img/3mob_w108px_X_h95px.jpg);
 	background-position: center center;
 }
-.succ-3 .success-icon2{
-	background: url(img/play_w108px_X_h95px.jpg);
+.succ-3 .success-icon2 .upper{
+	background-image: url(img/play_w108px_X_h95px.jpg);
 	background-position: center center;
 }
-
-
-
 
 
 .succ-1 .success-par{
-	margin-bottom: 0.5em;
-	padding: 0.5em;
+	margin-bottom: 0.3rem;
 	display: inline-block;
-	background-color: white;
-	width: 95%;
-	height: 10em;
+	width: 100%;
+	height: 12.5em;
 }
 .succ-1-up{
 	border-bottom-style: solid;
 	border-color: #DDDDDD;
 	border-bottom-width: 0.1em;
 	margin-top: 0.1em;
-	margin-bottom: 0.75em;
+	margin-bottom: 1%;
 }
 .succ-1-down{
 	margin-top: 0.75em;
@@ -559,21 +671,19 @@ nav ul li {
 	margin-left: 1em;
 }
 .succ-2 .success-par{
-	margin-top: 0.5em;
-	padding: 0.5em;
+	margin-top:0.45rem;
+	
 	display: inline-block;
-	background-color: white;
-	width: 95%;
-	height: 10em;
+	width: 100%;
+	height: 12.5em;
 }
 .succ-3 .success-par{
 
 	margin-bottom: 0.5em;
-	padding: 0.5em;
+	
 	display: inline-block;
-	background-color: white;
-	width: 91%;
-	height: 10em;
+	width: 100%;
+	height: 12.5em;
 }
 .succ-blue-button{
 	background: url(img/btnArrow.png) right 1em center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
@@ -617,6 +727,17 @@ nav ul li {
 	height: 5em;
 	position: center;
 }
+.cd-top div{
+	font-size: 0;
+	background-image: url("img/back_top.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 4.5rem;
+	height: 2rem;
+	position: relative;
+	left: 13%;
+}
 .footer{
 	background: linear-gradient(to left,#202020,#2B2B2B,#202020);
 	color: #EEEEEE;
@@ -638,7 +759,7 @@ nav li + li,
 .logo{
 	/*margin-left: 1em;*/
 	display: inline;
-	width: 20%;
+	width: 100%;
 }
 .inl/*,.search*/{
 	display: inline;
@@ -913,7 +1034,7 @@ header{
 		width: 3em;
 		height: 3em;
 		border-radius: 0.6em;
-		margin-left: 1em;
+		margin-top: 0.5em;
 	}
 	.hamburger-icon div{
 		background-image: url("img/hamburger-icon.png");
@@ -928,14 +1049,71 @@ header{
 		display: inline-block;
 	}
 	.logo{
-		position: relative;
-		left: 35%;
+		/*position: relative;
+		left: 35%;*/
+		/*margin-bottom: 1em;*/
+		width: 50%;
+	}
+	.hamb-logo-search{
+		display: flex;
+		justify-content: space-between;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	.search-button-resp{
+		content:  url("img/searchBtnMobile.png");
+		background-color: transparent;
+		background-repeat: no-repeat;
+		width: 2em;
+		height: 2em;
+		background-color: #F5F5F5;
+		border-radius: 0.6em;
+		padding: 0.5em;
+		cursor: pointer;
+		margin-top: 0.5em;
+	
+	}
+	.search-button{
+		/*content:  url("img/searchBtnMobile.png");
+		background-color: transparent;
+		background-repeat: no-repeat;
+		width: 2em;
+		height: 2em;
+		position: absolute;
+		left: 80%;
+		top: 5%;
+		border-radius: 0.6em;
+		padding: 0.2em;
+		background-color: #F5F5F5;*/
+		display: none;
+	}
+
+	.search div{
+		display: none;
+	}
+	.test-right{
+		display: block;
+		width: 100%;
 	}
 	.search-tab{
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		width: 90%;
+		margin-left: 0;
+		margin-right: 0;
+		position: relative;
+		left: 5%;
+		right: 5%;
 		display: block;
+		/*border:none;*/
+		visibility: hidden;
+	}
+	 #search-btn:checked + .search-tab{
+		visibility: visible;
 	}
 	#search{
-		width: 47em;
+		width: 100%;
+		visiblity: hidden;
 	}
 	
 	/*================introduction===================*/
@@ -944,7 +1122,7 @@ header{
 		padding: 0.5em;
 		margin-bottom: 1em;
 	}
-
+	
 	.about-comverse1,
 	.about-comverse2,
 	.about-comverse3{
@@ -962,35 +1140,34 @@ header{
 	.about-comverse{
 		/*background-color: #FFFFFF;*/
 	}
-	#slide1 + label span:before{
-		content: '1';
+	#slide1 + label span:before,
+	#slide2 + label span:before,
+	#slide3 + label span:before,
+	#slide4 + label span:before,
+	#slide5 + label span:before
+	{
 		position: relative;
 		top: 15%;
 		left:30%;
+	}
+	#slide1 + label span:before{
+		content: '1';
 	}
 	#slide2 + label span:before{
 		content: '2';
-		position: relative;
-		top: 15%;
-		left:30%;
+		
 	}
 	#slide3 + label span:before{
 		content: '3';
-		position: relative;
-		top: 15%;
-		left:30%;
+		
 	}
 	#slide4 + label span:before{
 		content: '4';
-		position: relative;
-		top: 15%;
-		left:30%;
+		
 	}
 	#slide5 + label span:before{
 		content: '5';
-		position: relative;
-		top: 15%;
-		left:30%;
+		
 	}
 	.radio-button span{
 		width: 1.5em;
