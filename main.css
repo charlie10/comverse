@@ -7,9 +7,7 @@ html{
 body {
 	margin: 0;
 }
-/*.ttt{
-	float: right;
-}*/
+
 .logo-nav-search {
 	margin-bottom: 0.7em;
 	
@@ -29,16 +27,12 @@ body {
 	padding-right: 0.5em;
 	border-radius: 0.6em;
 	border: 2px inset;
-	/*border-color: rgb(84,84,84);*/
 	width: inherit;
 	height: inherit;
 	border-width: 0.1em;
 	margin-left: 5em;
 }
-.search-button:focus{
-	/*float: left;*/
 
-}
 .search div{
 	background: transparent;
 	display: inline-block;
@@ -63,9 +57,7 @@ body {
 .right-sub-menu a:hover{
 	text-decoration: underline;
 }
-/*.test-right{
-	float: right;
-}*/
+
 .al-right{
 	text-align: right;
 	padding-right: 1em;
@@ -105,7 +97,6 @@ header,
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*min-height: 450px;*/
 	padding: 0;
 	margin: 0;
 
@@ -127,13 +118,11 @@ nav ul li {
 	margin:0 ;
 }
 .learn-more-button{
-	/*padding-left: 1em;*/
 	margin-bottom: 1em;
 }
 
 .radio-button{
 	margin-top: 1em;
-	/*margin-left: 1em;*/
 	position: absolute;
 	top: 45%;
 }
@@ -184,7 +173,6 @@ nav ul li {
 	box-sizing:border-box;
 	height: 8em;
 	padding: 0.5em 0.5em 0.5em 0.5em;
-	/*margin-right: 10px;*/
 	border-radius: 6px;
 	list-style-type: none;
 	box-shadow: 0 1px 3px 0 grey;
@@ -304,6 +292,11 @@ nav ul li {
 	cursor: pointer;
 	background-color: rgb(255,60,159);
 }
+.about-comverse1:hover span,
+.about-comverse2:hover span,
+.about-comverse3:hover span{
+	text-decoration: underline;
+}
 .about-comverse2{
 	background-color: rgba(105,194,45,0.8);
 	margin-right: 1em;
@@ -314,6 +307,7 @@ nav ul li {
 	cursor: pointer;
 	background-color: rgb(105,194,45);
 }
+
 .about-comverse3{
 	background-color: rgba(240,115,5,0.8);
 	margin-right: 0;
@@ -341,7 +335,6 @@ nav ul li {
 .news-and-events-elements{
 	width: calc(33.33% - 0.666667em);
 	text-align: left;
-	/*padding: 1em;*/
 }
 .news-and-events-elements .date{
 	background-color: #2e94c8;
@@ -415,7 +408,7 @@ nav ul li {
 	text-align: center;
 	color:#6D6D6D;
 }
-.success-par-link{
+.u-normal-link{
 	color: inherit;
 	width: 100%;
 	height: 100%;
@@ -466,12 +459,6 @@ nav ul li {
 	width: 3em;
 	height: 3em;
 }
-/*.apostrophy{
-	font-size: 0;
-	width: 5em;
-	height: 5em;
-	background-image: url(img/quote-grey.png);
-}*/
 .sergey-pic,
 .greame-pic{
 	width: 5em;
@@ -499,9 +486,7 @@ nav ul li {
 	height: 4em;
 	width: 5em;
 	background-repeat: no-repeat;
-	/*background-position: center center;*/
 	display: inline-block;
-	/*float: right;*/
 	margin-right: 1em;
 }
 .jt{
@@ -552,39 +537,12 @@ nav ul li {
 	background-repeat: no-repeat;
 
 }
-/*.success-icon1{
-	overflow: hidden;
-	position: relative;
-}
-
-.success-icon1 .upper{
-	background: url(img/mts_w108px_X_h95px.jpg);
-	width: 100%;
-	height: 100%;
-	background-position: center center;
-	transform: translate(0,0);
-	transition-duration:0.6s;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.success-icon1:hover .upper{
-	transform: translate(0,-100%);
-	transition-duration:0.6s;
-}
-.success-icon1 .lower{
-	background: url(img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg);
-	background-position: center center;
-	width: 100%;
-	height: 100%;
-}*/
 
 /*======================from here paragraph====*/
 
 .success-par{
 	overflow: hidden;
 	position: relative;
-	/*cursor: pointer;*/
 }
 .success-par:hover .upper-p{
 	transform: translate(0,-100%);
@@ -763,7 +721,6 @@ nav ul li {
 	background: linear-gradient(to left,#308fbf,#4daaca,#308fbf);
 	color: white;
 	text-align: center;
-	/*height: 17em;*/
 }
 .Solutions h2{
 	font-weight: lighter;
@@ -818,24 +775,16 @@ nav li + li,
 	background: url("img/divider.png") no-repeat top left;
 	padding-left: 0.5em;
 }
-/*.float-right{
-	float: right;
-	margin: 1em;
-}*/
 .logo{
-	/*margin-left: 1em;*/
 	display: inline;
 	width: 100%;
 }
-.inl/*,.search*/{
+.inl{
 	display: inline;
 	width: 20%;
 	font-size: 1.1em;
 	padding: 0.5em;
 }
-/*.search-txt{
-	visibility: hidden;
-}*/
 
 .intro-title
 {
@@ -843,11 +792,9 @@ nav li + li,
 	max-width: 12em;
 	color: white;
 	padding-top: 1em;
-	/*padding-left: 0.5em;*/
 	font-weight: normal;
 }
 .Introduction h3{
-	/*padding-left: 1em;*/
 	color: white;
 	max-width: 20em;
 	font-weight: normal;
@@ -908,7 +855,7 @@ header{
 	clear: both;
 }
 .footer div{
-	/*padding-left: 1em;*/
+
 }
 .footer ul{
 
@@ -975,7 +922,6 @@ header{
 }
 .blog-container div{
 	width: 70%;
-	/*padding: 1em;*/
 }
 .blog-container .date  .day
 {
@@ -1064,8 +1010,6 @@ header{
 	background-color: transparent;
 	background-size: cover;
 	background-repeat: no-repeat;
-	/*width: 1.5em;
-	height: 2em;*/
 	padding: 1em;
 	
 	margin-bottom: 1em;
@@ -1078,8 +1022,6 @@ header{
 }
 .copyright{
 	position: relative;
-	/*padding: 1em;*/
-	/*padding-left: 2em;*/
 }
 .copyright div{
 	margin: 0;
@@ -1119,11 +1061,6 @@ header{
 @media screen and (max-width: 905px) {
 	/*=============header==============*/
 
-/*	.logo-nav-search{
-		display: flex;
-		justify-content: space-between;
-
-	}*/
 	.hamburger-icon{
 		background-color: #F5F5F5;
 		width: 3em;
@@ -1145,9 +1082,6 @@ header{
 		display: inline-block;
 	}
 	.logo{
-		/*position: relative;
-		left: 35%;*/
-		/*margin-bottom: 1em;*/
 		width: 50%;
 	}
 	.hamb-logo-search{
@@ -1167,20 +1101,8 @@ header{
 		padding: 0.5em;
 		cursor: pointer;
 		margin-top: 0.5em;
-	
 	}
 	.search-button{
-		/*content:  url("img/searchBtnMobile.png");
-		background-color: transparent;
-		background-repeat: no-repeat;
-		width: 2em;
-		height: 2em;
-		position: absolute;
-		left: 80%;
-		top: 5%;
-		border-radius: 0.6em;
-		padding: 0.2em;
-		background-color: #F5F5F5;*/
 		display: none;
 	}
 
@@ -1192,7 +1114,6 @@ header{
 		width: 100%;
 	}
 	.search-tab{
-		/*margin-top: 0.5em;*/
 		margin-bottom: 0.5em;
 		width: 90%;
 		margin-left: 0;
@@ -1201,7 +1122,6 @@ header{
 		left: 5%;
 		right: 5%;
 		display: block;
-		/*border:none;*/
 		visibility: hidden;
 	}
 	 #search-btn:checked + .search-tab{
@@ -1209,7 +1129,6 @@ header{
 	}
 	#search{
 		width: 100%;
-		visibility: hidden;
 	}
 	.mobile-nav{
 		background-color: #FFFFFF;
@@ -1219,7 +1138,7 @@ header{
 		position: absolute;
 		top: 6%;
 		left: 0;
-		padding-left: 3%;
+		padding-left: 0%;
 	}
 	.mobile-nav li{
 		display: block;
@@ -1330,11 +1249,8 @@ header{
 		display: inline-block;
 	}
 	.Solutions{
-		/*min-height: 100%;*/
+		
 	}
-	/*.Solutions .blue-button{
-		visibility: hidden;
-	}*/
 	
 
 	/*==============news and events=================*/
@@ -1351,6 +1267,9 @@ header{
 	/*============================success stories==================*/
 	.succ{
 		display: block;
+	}
+	.succ-para-1{
+		margin-bottom: 2em;
 	}
 	.succ-1,
 	.succ-2{
@@ -1371,6 +1290,7 @@ header{
 	.succ-2 .success-icon3{
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		height: 7em;
 	}
 	.succ-2 .success-par{
 		margin-top: 0em;
