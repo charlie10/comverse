@@ -154,6 +154,11 @@ nav ul li {
 
 }
 
+.radio-button span a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
 .radio-button span:hover{
 	background-color: #1C91C8;
 	cursor: pointer;
@@ -1103,7 +1108,7 @@ header{
 /*================================================*/
 /*mobile version*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 905px) {
 	/*=============header==============*/
 
 /*	.logo-nav-search{
@@ -1178,7 +1183,7 @@ header{
 		width: 100%;
 	}
 	.search-tab{
-		margin-top: 0.5em;
+		/*margin-top: 0.5em;*/
 		margin-bottom: 0.5em;
 		width: 90%;
 		margin-left: 0;
@@ -1195,7 +1200,7 @@ header{
 	}
 	#search{
 		width: 100%;
-		visiblity: hidden;
+		visibility: hidden;
 	}
 	
 	/*================introduction===================*/
@@ -1340,10 +1345,51 @@ header{
 		
 	/*================footer=====================*/
 	.footer{
-	 	display: none;
-	}	
-
-	
+		position: relative;
+	}
+	.blog{
+		min-height: inherit;
+		background-color: inherit;
+		float: inherit;
+		width: 100%;
+		margin-left: 0;
+		padding: 0;
+	}
+	.footer-element-mobile{
+		width: 100%;
+		border-bottom: outset;
+		border-color: #C0C0C0;
+		border-width: 0.1em;
+		padding: 0.3em;	
+		color: #C9C9C9;
+		text-transform: uppercase;
+		box-sizing:border-box;
+	}
+	.footer-element-mobile a{
+		color: inherit;
+		text-decoration: none;
+	}
+	.icons{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.icons button{
+		margin-top: 0;
+		margin-bottom: 0;
+		float: inherit;
+		margin-left: 1em;
+	}
+	.copyright li:first-child{
+		padding-left: 0.3em;
+	}
+	.copyright .copyright-bottom{
+		background-color: #EEEEEE;
+		width: 100%;
+		position: inherit;
+		margin-bottom: 0;
+		font-size: 90%;
+	}
 	/*============utilty==================*/
 	.u-hide-resp{
 		display: none;
