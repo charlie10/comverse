@@ -785,7 +785,16 @@ nav ul li {
 	height: 5em;
 	position: center;
 }
+.top-button{
+	position: relative;
+	left: 6%;
+	width: 20%;
+}
+.cd-top{
+	display: inline-block;
+}
 .cd-top div{
+	display: inline-block;
 	font-size: 0;
 	background-image: url("img/back_top.png");
 	background-size: cover;
@@ -794,7 +803,6 @@ nav ul li {
 	width: 4.5rem;
 	height: 2rem;
 	position: relative;
-	left: 13%;
 }
 .footer{
 	background: linear-gradient(to left,#202020,#2B2B2B,#202020);
@@ -1122,6 +1130,7 @@ header{
 		height: 3em;
 		border-radius: 0.6em;
 		margin-top: 0.5em;
+		cursor: pointer;
 	}
 	.hamburger-icon div{
 		background-image: url("img/hamburger-icon.png");
@@ -1201,6 +1210,35 @@ header{
 	#search{
 		width: 100%;
 		visibility: hidden;
+	}
+	.mobile-nav{
+		background-color: #FFFFFF;
+		width: 100%;
+		box-sizing:border-box;
+		z-index: 1;
+		position: absolute;
+		top: 6%;
+		left: 0;
+		padding-left: 3%;
+	}
+	.mobile-nav li{
+		display: block;
+		border-bottom: inset;
+		border-width: 0.1em;
+		font-size: 1.5em;
+		padding: 0.2em;
+	}
+	.mobile-nav li span{
+		background-image: url("img/navCollapseArrowRight.png");
+		display: inline-block;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 1em;
+		height: 1em;
+
+	}
+	#hamb-button:checked + .mobile-nav{
+		display: table;
 	}
 	
 	/*================introduction===================*/
@@ -1368,6 +1406,11 @@ header{
 	.footer-element-mobile a{
 		color: inherit;
 		text-decoration: none;
+	}
+	.mobile-change-lang select{
+		background-color: #3F3F3F;
+		color: inherit;
+		border:none;
 	}
 	.icons{
 		display: block;
