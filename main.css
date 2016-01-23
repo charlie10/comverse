@@ -21,7 +21,9 @@ body {
 	width: 8em;
 }
 
-
+.bolding{
+	font-weight: bold;
+}
 .search-tab{
 	padding: 0em;
 	padding-right: 0.5em;
@@ -109,6 +111,9 @@ nav ul li {
 
 .radio-button{
 	margin-top: 1em;
+	position: absolute;
+	top: 39%;
+	left: 11%;
 	/*margin-left: 1em;*/
 }
 .radio-button input{
@@ -139,6 +144,10 @@ nav ul li {
 
 
 /*=======================*/
+
+.about-comverse{
+	margin-top: 2em;
+}
 
 .about-comverse1,
 .about-comverse2,
@@ -324,15 +333,15 @@ nav ul li {
 	background-color: rgba(255,255,255,0.7);
 }
 .whats-happening h4,
-.whats-happening h3{
+.whats-happening h2{
 	color: white;
 	font-weight: normal;
 	font-size: 1.5em;
 	margin-bottom: 0;
+	text-transform: uppercase;
 }
-.whats-happening h3{
+.whats-happening h2{
 	font-size: 2em;
-
 
 }
 .whats-txt{
@@ -373,6 +382,7 @@ nav ul li {
 .success-stories h2{
 	font-weight: normal;
 	font-size: 2em;
+	text-transform: uppercase;
 }
 .succ-1,
 .succ-2{
@@ -480,7 +490,7 @@ nav ul li {
 .succ-2 .success-icon2,
 .success-icon3{
 	height: 5em;
-	width: 6.7rem;
+	width: 31.7%;
 	display: inline-block;
 	background-position: center center;
 
@@ -638,7 +648,7 @@ nav ul li {
 .succ-3 .success-icon2{
 	background-image: url(img/VIDEOCON_w108px_X_h95px.jpg);
 	height: 5em;
-	width: 5.825rem;
+	width: 48%;
 	display: inline-block;
 	background-position: center center;
 }
@@ -679,12 +689,13 @@ nav ul li {
 }
 .succ-3 .success-par{
 
-	margin-bottom: 0.5em;
+	margin-bottom: 0.3rem;
 	
 	display: inline-block;
 	width: 100%;
 	height: 12.5em;
 }
+
 .succ-blue-button{
 	background: url(img/btnArrow.png) right 1em center no-repeat, linear-gradient(to bottom, #2e94c8 , #1188c4);
 	height: 2.8em;
@@ -706,8 +717,9 @@ nav ul li {
 	/*height: 17em;*/
 }
 .Solutions h2{
-	font-weight: normal;
+	font-weight: lighter;
 	font-size: 2em;
+	text-transform: uppercase;
 }
 .Solutions a{
 	text-decoration: none;
@@ -778,11 +790,13 @@ nav li + li,
 	color: white;
 	padding-top: 1em;
 	/*padding-left: 0.5em;*/
+	font-weight: normal;
 }
 .Introduction h3{
 	/*padding-left: 1em;*/
 	color: white;
 	max-width: 20em;
+	font-weight: normal;
 } 
 .Introduction h3>span{
 	display: block;
@@ -1018,6 +1032,16 @@ header{
 	font-size: 0;
 
 }
+
+.hidden-icons-2{
+	display: none;
+}
+
+.bolding{
+	font-weight: bold;
+}
+
+
 /*================================================*/
 /*mobile version*/
 
@@ -1139,6 +1163,7 @@ header{
 	}
 	.about-comverse{
 		/*background-color: #FFFFFF;*/
+
 	}
 	#slide1 + label span:before,
 	#slide2 + label span:before,
@@ -1172,7 +1197,6 @@ header{
 	.radio-button span{
 		width: 1.5em;
 		height: 1.5em;
-		
 
 	}
 
@@ -1241,10 +1265,13 @@ header{
 	}
 	.succ-2 .success-par{
 		margin-top: 0em;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.3rem;
 	}
-
-
+		
+	.hidden-icons-2{
+		display: flex;
+	}
+		
 	/*================footer=====================*/
 	.footer{
 	 	display: none;
