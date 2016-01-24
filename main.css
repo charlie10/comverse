@@ -1166,6 +1166,26 @@ header{
 		padding: 0.5em;
 		margin-bottom: 1em;
 	}
+	.about-comverse1 p,
+	.about-comverse2 p,
+	.about-comverse3 p
+	{
+		position: relative;
+		width: 90%;
+		margin-right: 0;
+		display: inline-block;
+
+	}
+	.right-arrow{
+		position: absolute;
+		top: 46%;
+		right: 0;
+		background-image: url("img/promotion-item-arrow.png");
+		height: 30%;
+		width: 5%;
+		background-repeat: no-repeat;
+		display: inline-block;
+	}
 	.about-comverse1,
 	.about-comverse2,
 	.about-comverse3{
