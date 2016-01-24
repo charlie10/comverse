@@ -12,7 +12,11 @@
 			<div class="logo-nav-search">
 				<div class="inline-b hamb-logo-search">
 					<label for="hamb-button">
-						<div class="hamburger-icon u-hide-reg"><div></div></div>
+						<div class="hamburger-icon u-hide-reg">
+							<div>
+								<span class="u-hide-always">Show nav bar</span>
+							</div>
+						</div>
 					</label>
 					<input  class="u-hide-always" type="checkbox" id="hamb-button">
 					<ul class="u-hide-always mobile-nav">
@@ -41,11 +45,13 @@
 							</a>
 						</li>
 					</ul>
-					<a href="">
+					<a href="" class="logo-mob">
 						<img class="logo" src="img/comverse-logo.png" alt="Comverse Logo" >
 					</a>
 					<label for="search-btn">
-						<div class="search-button-resp u-hide-reg"></div>
+						<div class="search-button-resp u-hide-reg">
+							<span class="u-hide-always">Search</span>
+						</div>
 					</label>
 				</div>
 				<nav class="inl u-hide-resp">
@@ -59,8 +65,9 @@
 				<div class="inline-b test-right u-clear-fix ">
 					<div class="al-right u-hide-resp">
 						<ul class="right-sub-menu">
-							<li class="lang">	
-								<select>
+							<li class="lang">
+								<label for="lang-select" class="u-hide-always">Change language</label>
+								<select id="lang-select">
 									<option value="English">EN</option>
 									<option value="Hebrew">HB</option>
 									<option value="Arabic">AR</option>
@@ -87,7 +94,7 @@
 			</div>
 		</div>
 	</header>
-	<div class="Introduction">
+	<section class="Introduction">
 		<div class="box">
 			<ul class="slides-list">
 				<li>
@@ -138,58 +145,68 @@
 					<input type="radio" id="slide1" name="slides" checked="checked">
 					<label for="slide1">
 						<span>
-							<a href=""></a>
+							<a href="">
+								<div class="u-hide-always">First slide</div>
+							</a>
 						</span>
 						
 					</label>
 					<input type="radio" id="slide2" name="slides" >
 					<label for="slide2">
 						<span>
-							<a></a>
+							<a>
+								<div class="u-hide-always">Second slide</div>
+							</a>
 						</span>
 					</label>
 					<input type="radio" id="slide3" name="slides" >
 					<label for="slide3">
 						<span>
-							<a></a>
+							<a>
+								<div class="u-hide-always">Third slide</div>
+							</a>
 						</span>
 					</label>
 					<input type="radio" id="slide4" name="slides" >
 					<label for="slide4">
 						<span>
-							<a></a>
+							<a>
+								<div class="u-hide-always">Fourth slide</div>
+							</a>
 						</span>
 					</label>
 					<input type="radio" id="slide5" name="slides" >
 					<label for="slide5">
 						<span>
-							<a></a>
+							<a>
+								<div class="u-hide-always">Fifth slide</div>
+							</a>
 						</span>
 					</label>
 				</form>
 			</div>
 		</div>
-	</div>
-	<div class="Solutions">
+	</section>
+	<section class="Solutions">
 		<div class="box">
 			<h2>What Can We Do For You?</h2>
 			<div class="all-solutions u-clear-fix">
 				<div class="first-3-sol">
 					<div class="sol sol-data-mone">
 						<a  href="">
-							<img  src="img/solution_icon_biz-analitics.png">
+							<img alt="Data monetization" src="img/solution_icon_biz-analitics.png">
 							<p>Data monetization</p>
 						</a>
 					</div>
 					<div class="sol sol-mtm">
 						<a href="">
-							<img src="img/solution_icon_diti-cx.png">
+							<img alt="Mashine to mashine" src="img/solution_icon_diti-cx.png">
 							<p>Mashine to machine(M2M)</p>
 						</a>
 					</div>
 					<div class="sol sol-ott">
 						<a href="">
-							<img src="img/solution_icon_smart-money.png">
+							<img alt="Over the top" src="img/solution_icon_smart-money.png">
 							<p>Over-the-top(OTT)</p>
 						</a>
 					</div>
@@ -197,19 +214,19 @@
 				<div class="second-3-sol">
 					<div class="sol sol-cloud-com">
 						<a href="">
-							<img src="img/solution_icon_optimize-efficnt.png">
+							<img alt="Cloud computing" src="img/solution_icon_optimize-efficnt.png">
 							<p>Cloud computing</p>
 						</a>
 					</div>
 					<div class="sol sol-managed-ser">
 						<a href="">
-							<img src="img/solution_icon_personal.png">
+							<img alt="Managed services" src="img/solution_icon_personal.png">
 							<p>Managed services</p>
 						</a>
 					</div>
 					<div class="sol sol-social-med">
 						<a href="">
-							<img src="img/solution_icon_biz-transform.png">
+							<img alt="Social Media" src="img/solution_icon_biz-transform.png">
 							<p>Social Media</p>
 						</a>
 					</div>
@@ -217,8 +234,8 @@
 			</div>
 			<button class="blue-button u-hide-resp" type="button">See all of our solutions</button>
 		</div>
-	</div>
-	<div class="whats-happening">
+	</section>
+	<section class="whats-happening">
 		<div class="box">
 			<h2>What's Happening at Comverse?</h2>
 			<div class="news-and-events">
@@ -276,8 +293,8 @@
 			
 		</div>
 		
-	</div>
-	<div class="success-stories">
+	</section>
+	<section class="success-stories">
 		<div class="box">
 			<h2>Success Stories</h2>
 			<div class = "succ">
@@ -309,18 +326,21 @@
 					<div class="success-icons">
 						<div class="success-icon1">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon2">
 							<a href="">	
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon3">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
@@ -331,18 +351,21 @@
 					<div class="success-icons u-hide-resp">
 						<div class="success-icon1">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon2">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon3">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
@@ -376,18 +399,21 @@
 					<div class="success-icons hidden-icons-2">
 						<div class="success-icon1">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon2">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon3">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
@@ -417,12 +443,14 @@
 					<div class="success-icons">
 						<div class="success-icon1">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
 						</div>
 						<div class="success-icon2">
 							<a href="">
+								<span class="u-hide-always">Play</span>
 								<div class="upper"></div>
 								<div class="lower"></div>
 							</a>
@@ -438,8 +466,8 @@
 			</div>
 			
 		</div>
-	</div>
-	<div class="footer">
+	</section>
+	<footer>
 		<div class="box u-clear-fix">
 			<div class="footer-element-mobile u-hide-reg">
 				<a href="">Contact us</a>
@@ -545,26 +573,34 @@
 				<div class="lower-blog">
 					<h4 class="u-hide-resp">Subscribe to Comverse</h4>
 					<form class="subscribe u-hide-resp"  action="" >
+						<label class="u-hide-always" for="sign-up">Subscribtion Email</label>
 						<input id="sign-up" type="sign up" placeholder="charlieMbariky@gmail.com">
 						<input class="blue-button2" type="submit" value="SIGN UP">
 					</form>
 					<div class="icons footer-element-mobile">
 						<span class="u-hide-reg"> visit us on:</span>
 						<a href="https://www.youtube.com/">
-							<button class="icon-button1" type="button"></button>
+							<button class="icon-button1" type="button">
+								<span class="u-hide-always">Youtube</span>
+							</button>
 						</a>
 						<a href="https://twitter.com">
-							<button class="icon-button2" type="button"></button>
+							<button class="icon-button2" type="button">
+								<span class="u-hide-always">Twitter</span>
+							</button>
 						</a>
 						<a href="https://www.linkedin.com/">
-							<button class="icon-button3" type="button"></button>
+							<button class="icon-button3" type="button">
+								<span class="u-hide-always">LinkedIn</span>
+							</button>
 						</a>
 					</div>
 				</div>
 			</div>
 			<div class="footer-element-mobile mobile-change-lang u-hide-reg">
 				Change language
-				<select>
+				<label for="lang-mobile" class="u-hide-always">Change language</label>
+				<select id="lang-mobile">
 						<option value="English">English</option>
 						<option value="Hebrew">Hebrew</option>
 						<option value="Arabic">Arabic</option>
@@ -579,6 +615,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</footer>
 </body>
 </html>

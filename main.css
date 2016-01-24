@@ -68,7 +68,7 @@ header,
 .Introduction,
 .Solutions,  
 .whats-happening,
-.footer {
+footer {
 	padding-top: 1em;
 	padding-bottom: 1em;
 
@@ -761,7 +761,7 @@ nav ul li {
 	height: 2rem;
 	position: relative;
 }
-.footer{
+footer{
 	background: linear-gradient(to left,#202020,#2B2B2B,#202020);
 	color: #EEEEEE;
 	width: 100%;
@@ -854,13 +854,13 @@ header{
 	display: block;
 	clear: both;
 }
-.footer div{
+footer div{
 
 }
-.footer ul{
+footer ul{
 
 }
-.footer ul{
+footer ul{
 	list-style-type: none;
 	padding-left: 0;
 }
@@ -868,11 +868,11 @@ header{
 .company{
 	margin-left: 1.2%;
 }
-.footer li:hover{
+footer li:hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
-.footer li{
+footer li{
 	margin-top: 0.38em;
 }
 .key-solutions, .products-and-services,.company,.blog
@@ -1082,7 +1082,11 @@ header{
 		display: inline-block;
 	}
 	.logo{
-		width: 50%;
+		width: 65%;
+		margin-left: 18%;
+	}
+	.logo-mob{
+
 	}
 	.hamb-logo-search{
 		display: flex;
@@ -1322,7 +1326,7 @@ header{
 	}
 		
 	/*================footer=====================*/
-	.footer{
+	footer{
 		position: relative;
 	}
 	.blog{
