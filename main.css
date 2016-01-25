@@ -16,7 +16,7 @@ body {
 #search{
 	border-radius: 0.6em;
 	border:none;
-	width: 7em;
+	width: 8.5em;
 }
 
 .bolding{
@@ -26,7 +26,7 @@ body {
 	padding: 0em;
 	padding-right: 0.5em;
 	border-radius: 0.6em;
-	border: 2px inset;
+	border: 0.6em inset;
 	width: inherit;
 	height: inherit;
 	border-width: 0.1em;
@@ -61,7 +61,10 @@ body {
 .al-right{
 	text-align: right;
 	padding-right: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 0.6em;
+}
+.float-right{
+	float: 	right;
 }
 
 header,
@@ -173,9 +176,9 @@ nav ul li {
 	box-sizing:border-box;
 	height: 8em;
 	padding: 0.5em 0.5em 0.5em 0.5em;
-	border-radius: 6px;
+	border-radius: 0.6em;
 	list-style-type: none;
-	box-shadow: 0 1px 3px 0 grey;
+	box-shadow: 0 0.2em 0.3em 0 grey;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 1.2em;
 	color: white;
@@ -1034,7 +1037,7 @@ footer li{
 }
 .copyright-bottom{
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 }
 
 .u-hide-always,
@@ -1049,12 +1052,81 @@ footer li{
 .bolding{
 	font-weight: bold;
 }
+@media screen and (max-width: 920px) {
+		html{
+			font-size: 95%;
+		}
 
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+	html{
+		font-size:90%;
+	}
+	/*=============header==============*/
+	#search{
+		width: 64%;
+	}
+	.search-tab{
+		width: 	8rem;
+		/*margind-left: 10%;*/
+		border-width: 0.1rem;
+		margin-left: 10%;
+	}
+	.test-right{
+		float: 	right;
+	}
+	.search-button{
+		width: 12%;
+		margin-top: 2%;
+	}
+	.search div{
+
+	}
+	.right-sub-menu{
+		padding-left: 0;
+	}
+	/*=============Success Stories==============*/
+	.cabale-wireless,
+	.jt{
+		height: 3em;
+		width: 4em;
+		background-size: contain;
+	}
+
+	/*=============footer==============*/
+	.blog{
+		width: 	24%;
+	}
+	#sign-up{
+		width: 	60%;
+	}
+}
+@media screen and (max-width: 790px) {
+	html{
+		font-size: 85%;
+	}
+	#search{
+		width: 59%;
+	}
+	.search-tab{
+		width: 6rem;
+		margin-top:	0.5em;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	html{
+		font-size: 80%;
+	}
 
 /*================================================*/
 /*mobile version*/
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 710px) {
 	/*=============header==============*/
 
 	.hamburger-icon{
@@ -1084,6 +1156,11 @@ footer li{
 	.logo-mob{
 
 	}
+	.float-right{
+		float:inherit;
+		display: block;
+		width: 100%;
+	}
 	.hamb-logo-search{
 		display: flex;
 		justify-content: space-between;
@@ -1108,10 +1185,6 @@ footer li{
 
 	.search div{
 		display: none;
-	}
-	.test-right{
-		display: block;
-		width: 100%;
 	}
 	.search-tab{
 		margin-bottom: 0.5em;
@@ -1310,7 +1383,7 @@ footer li{
 	.succ-2 .success-icon3{
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
-		height: 7em;
+		height: 8.5em;
 	}
 	.succ-2 .success-par{
 		margin-top: 0em;
@@ -1382,5 +1455,12 @@ footer li{
 		display: inline-block;
 	}
 
+}
+/* Full support until width 285px*/
+@media screen and (max-width: 330px) {
+	html{
+		font-size: 70%;
+	}
 
 }
+
