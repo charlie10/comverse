@@ -1041,10 +1041,6 @@ footer li{
 .u-hide-reg{
 	display: none;
 }
-.u-font-0{
-	font-size: 0;
-
-}
 
 .hidden-icons-2{
 	display: none;
@@ -1340,9 +1336,9 @@ footer li{
 	.footer-element-mobile{
 		width: 100%;
 		border-bottom: outset;
-		border-color: #C0C0C0;
+		border-color: #1B1B1B;
 		border-width: 0.1em;
-		padding: 0.3em;	
+		padding: 0.5em;	
 		color: #C9C9C9;
 		text-transform: uppercase;
 		box-sizing:border-box;
@@ -1355,6 +1351,7 @@ footer li{
 		background-color: #3F3F3F;
 		color: inherit;
 		border:none;
+		height: 1.5rem;
 	}
 	.icons{
 		display: block;
