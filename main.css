@@ -683,7 +683,7 @@ nav ul li {
 	border-color: #DDDDDD;
 	border-bottom-width: 0.1em;
 	margin-top: 0.1em;
-	margin-bottom: 1%;
+	margin-bottom: 10%;
 }
 .succ-1-down{
 	margin-top: 0.75em;
@@ -1116,6 +1116,10 @@ footer li{
 		width: 6rem;
 		margin-top:	0.5em;
 	}
+
+.succ-1-up{
+	margin-bottom: 2%;
+}
 }
 
 @media screen and (max-width: 750px) {
@@ -1362,7 +1366,7 @@ footer li{
 		display: block;
 	}
 	.succ-para-1{
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 	.succ-1,
 	.succ-2{
