@@ -1084,6 +1084,14 @@ footer li{
 .bolding{
 	font-weight: bold;
 }
+.copyright ul li a:hover{
+	text-decoration: underline;
+}
+.copyright ul li:first-child:hover{
+	text-decoration: none;
+	cursor: default;
+}
+
 
 @media screen and (max-width: 920px) {
 		html{
