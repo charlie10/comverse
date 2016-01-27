@@ -1600,6 +1600,16 @@ footer li{
 
 }
 
+@media screen and (max-width: 400px) {
+
+	.success-box-type1 .success-icon{
+		height: 6rem;
+	}
+
+}
+
+
+
 
 
 /* Full support until width 285px*/
