@@ -1375,33 +1375,33 @@ footer li{
 		/*background-color: #FFFFFF;*/
 	}
 
-	.r-slide + label span:before
+	.r-slide + label span a:before
 	{
 		position: relative;
 		top: 15%;
 		left:30%;
 	}
 
-	#slide1 + label span:before{
+	#slide1 + label span a:before{
 		content: '1';
 	}
 
-	#slide2 + label span:before{
+	#slide2 + label span a:before{
 		content: '2';
 		
 	}
 
-	#slide3 + label span:before{
+	#slide3 + label span a:before{
 		content: '3';
 		
 	}
 
-	#slide4 + label span:before{
+	#slide4 + label span a:before{
 		content: '4';
 		
 	}
 
-	#slide5 + label span:before{
+	#slide5 + label span a:before{
 		content: '5';
 		
 	}
